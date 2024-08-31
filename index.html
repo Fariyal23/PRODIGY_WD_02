@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOPWATCH</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body class="light-mode">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <div class="container">
+        <h1 id="heading">Stopwatch</h1>
+        <div class="timer-Display flip">
+            <div class="flip-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">00 : 00 : 00 : 00</div>
+                </div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="startTimer" onclick="start()">Start</button>
+            <button id="pauseTimer" onclick="pause()">Pause</button>
+            <button id="resetTime" onclick="reset()">Reset</button>
+            <button id="restartTimer" onclick="restart()">Restart</button>
+            <button id="lap" onclick="lap()">Lap</button>
+            <button id="resetLap" onclick="resetLap()">Reset Laps</button>
+        </div>
+        <!-- New Section for Lap Records -->
+        <div class="lap-records">
+            <h2>Lap Records</h2>
+            <ul class="record-list"></ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
